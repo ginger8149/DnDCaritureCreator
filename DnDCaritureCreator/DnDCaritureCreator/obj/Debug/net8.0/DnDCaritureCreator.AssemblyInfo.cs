@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DnDCaritureCreator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59484ad6d2aa596f2c8775d98fc39431b7e1f7dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79207a20de1c0911f12599a5d92b85d8cb0fa4a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DnDCaritureCreator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DnDCaritureCreator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

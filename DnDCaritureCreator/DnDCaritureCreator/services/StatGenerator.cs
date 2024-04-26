@@ -6,6 +6,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace DnDCaritureCreator.services
 {
@@ -32,14 +33,18 @@ namespace DnDCaritureCreator.services
             int slectedRoll = 0;
             int slectedStat = 6;// any number 6 or higher deactivates selection curser
             bool pickStat = false; //used for control not rendering
+            bool removeStat = false;
+            
 
 
-
-            //UI
+            //UI 
             while( true)
             {
+
+                // UI renderer
                 Console.Clear();
                 Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Gray;
                 Console.WriteLine("ROLLED STATS EDITOR");
 
                 // show rolled numbers
@@ -67,10 +72,13 @@ namespace DnDCaritureCreator.services
                     Console.ResetColor();
                     Console.Write(" ");
                 }
-                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.BackgroundColor = ConsoleColor.Black;
                 Console.WriteLine();
                 Console.WriteLine();
 
+
+                // stat renderer
                 for (int i = 0; i < 6; i++)
                 {
                     int statValue = 0;
@@ -82,10 +90,9 @@ namespace DnDCaritureCreator.services
                             statValue = rolledStats[j];
                     }
                     
-
-                    
                     // colour managment
                     Console.ResetColor();
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     if (i == slectedStat)
                     {
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -95,17 +102,133 @@ namespace DnDCaritureCreator.services
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                     }
-
                     Console.WriteLine(statNames[i] + ": " + statValue);
-
-
-
                 }
 
+                Console.WriteLine();
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Gray;
+                if (!pickStat)
+                    Console.WriteLine("Enter: select stat value  r: remove assigned stat");
+                else
+                    Console.WriteLine("Enter: assign to stat c:Cancel");
 
+                // ui controler
+                ConsoleKeyInfo keyPress =  Console.ReadKey();
 
-                Console.ReadLine();
+                if (!pickStat)
+                {
+                    if(keyPress.Key == ConsoleKey.LeftArrow)
+                    {
+                        slectedRoll--;
+                        if (slectedRoll < 0)
+                            slectedRoll = 5;
+                    }
+                    if (keyPress.Key == ConsoleKey.RightArrow)
+                    {
+                        slectedRoll++;
+                        if (slectedRoll > 5)
+                            slectedRoll = 0;
+                    }
+                    if (keyPress.Key == ConsoleKey.R)
+                    {
+                        slectedRoll = 6;
+                        slectedStat = 0;
 
+                        pickStat = true;
+                        removeStat = true;
+                    }
+                    if (keyPress.Key == ConsoleKey.Enter)
+                    {
+                        
+                        slectedStat = 0;
+                        pickStat = true;
+                        
+                    }
+
+                }
+                else if (removeStat)
+                {
+                    if (keyPress.Key == ConsoleKey.UpArrow)
+                    {
+                        slectedStat--;
+                        if (slectedStat < 0)
+                            slectedStat = 5;
+                    }
+                    if (keyPress.Key == ConsoleKey.DownArrow)
+                    {
+                        slectedStat++;
+                        if (slectedStat > 5)
+                            slectedStat = 0;
+                    }
+                    if (keyPress.Key == ConsoleKey.C)
+                    {
+                        slectedRoll = 0;
+                        slectedStat = 6;
+                        pickStat = false;
+                        removeStat = false;
+
+                    }
+                    if (keyPress.Key == ConsoleKey.Enter) 
+                    {
+                        for(int i = 0; i < 6; i++)
+                        {
+                            if (usedStats[i] == slectedStat)
+                            {
+                                usedStats[i] = null;
+                                slectedRoll = 0;
+                                slectedStat = 6;
+                                pickStat = false;
+                                removeStat = false;
+
+                            }
+                        }
+
+                    }
+                }
+                else
+                {
+                    if (keyPress.Key == ConsoleKey.UpArrow)
+                    {
+                        slectedStat--;
+                        if (slectedStat < 0)
+                            slectedStat = 5;
+                    }
+                    if (keyPress.Key == ConsoleKey.DownArrow)
+                    {
+                        slectedStat++;
+                        if (slectedStat > 5)
+                            slectedStat = 0;
+                    }
+                    if (keyPress.Key == ConsoleKey.C)
+                    {
+                        slectedRoll = 0;
+                        slectedStat = 6;
+                        pickStat = false;
+                        removeStat = false;
+
+                    }
+                    if (keyPress.Key == ConsoleKey.Enter)
+                    {
+                        bool statAssigned = false;
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (usedStats[i] == slectedStat)
+                            {
+                                statAssigned = true;
+                            }
+                        }
+
+                        if (!statAssigned) { 
+                            usedStats[slectedRoll] = slectedStat;
+                            slectedRoll = 0;
+                            slectedStat = 6;
+                            pickStat = false;
+                            removeStat = false;
+                        }
+
+                    }
+                }
 
 
             }
