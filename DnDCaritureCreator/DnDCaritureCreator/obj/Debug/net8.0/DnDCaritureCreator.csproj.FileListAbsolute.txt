@@ -1,0 +1,15 @@
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.exe
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.deps.json
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.runtimeconfig.json
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.dll
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.pdb
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.AssemblyInfoInputs.cache
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.AssemblyInfo.cs
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.csproj.CoreCompileInputs.cache
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.sourcelink.json
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.dll
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\refint\DnDCaritureCreator.dll
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.pdb
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.genruntimeconfig.cache
+C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\ref\DnDCaritureCreator.dll
