@@ -117,9 +117,9 @@ namespace DnDCaritureCreator.services
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.Gray;
                 if (!pickStat)
-                    Console.WriteLine("Enter: select stat value  r: remove assigned stat");
+                    Console.WriteLine("Enter: select stat value  R: remove assigned stat  F: Finalise and confirm");
                 else
-                    Console.WriteLine("Enter: assign to stat c:Cancel");
+                    Console.WriteLine("Enter: assign to stat C:Cancel");
 
                 // ui controler
                 ConsoleKeyInfo keyPress =  Console.ReadKey();
@@ -152,6 +152,32 @@ namespace DnDCaritureCreator.services
                         slectedStat = 0;
                         pickStat = true;
                         
+                    }
+                    if (keyPress.Key == ConsoleKey.F)
+                    {
+                        //display are you sure message
+                        Console.Clear();
+                        Console.WriteLine("are you happy with these stats? y/n");
+                        Console.WriteLine();
+                        for (int i = 0; i < 6; i++)
+                        {
+                            int statValue = 0;
+                            for (int j = 0; j < 6; j++)
+                            {
+                                if (i == usedStats[j])
+                                    statValue = rolledStats[j];
+                            }
+                            Console.WriteLine(statNames[i] + ": " + statValue);
+
+                        }
+                        
+                        ConsoleKeyInfo key = Console.ReadKey();
+                        if (key.Key == ConsoleKey.Y)
+                        {
+
+                        }
+
+
                     }
 
                 }
