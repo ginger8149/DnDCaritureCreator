@@ -21,12 +21,20 @@ namespace DnDCaritureCreator.services
             List<int> rolledStats = new List<int>();
 
             for (int i = 0; i < 6; i++)
-                rolledStats.Add(random.Next(1,21));
+            {
+                List<int> dice = new List<int>();
+                for (int j = 0; j < 4; j++)
+                    dice.Add(random.Next(1, 6));
+                dice.Sort();
+                rolledStats.Add(dice[1] + dice[2] + dice[3]);
+            }
+                
+
+
+
 
 
             List<string> statNames = new List<string>() { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" };
-
-
 
             //UI managment flags
             List<int?> usedStats = new List<int?>() { null, null, null, null, null, null };
