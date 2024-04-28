@@ -153,6 +153,7 @@ namespace DnDCaritureCreator.services
                         pickStat = true;
                         
                     }
+                    //prevent runing if not all stat assigned
                     if (keyPress.Key == ConsoleKey.F)
                     {
                         //display are you sure message
@@ -174,6 +175,24 @@ namespace DnDCaritureCreator.services
                         ConsoleKeyInfo key = Console.ReadKey();
                         if (key.Key == ConsoleKey.Y)
                         {
+                            //save choices to cariture
+                            foreach(int stat in usedStats)
+                            {
+                                //"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"
+                                if (stat == 0)
+                                    storedStats.strength += stat;
+                                else if (stat == 1)
+                                    storedStats.dexterity += stat;
+                                else if (stat == 2)
+                                    storedStats.constitution += stat;
+                                else if (stat == 3)
+                                    storedStats.intelligence += stat;
+                                else if (stat == 4)
+                                    storedStats.wisdom += stat;
+                                else if (stat == 5)
+                                    storedStats.charisma += stat;
+                            }
+                            break;
 
                         }
 
