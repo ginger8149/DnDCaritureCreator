@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/DnDCaritureCreator/.vs/
+/DnDCaritureCreator/.vs
 /DnDCaritureCreator/DnDCaritureCreator/bin/Debug/net8.0/DnDCaritureCreator.dll
 /DnDCaritureCreator/.vs/DnDCaritureCreator/v17/.suo
 /DnDCaritureCreator/.vs/DnDCaritureCreator/v17/DocumentLayout.json
@@ -16,3 +16,4 @@
 /DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.dll
 /DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.pdb
 /DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.sourcelink.json
+/DnDCaritureCreator/.vs/DnDCaritureCreator/DesignTimeBuild/.dtbcache.v2
