@@ -2,4 +2,17 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/DnDCaritureCreator/.vs/DnDCaritureCreator/FileContentIndex
+/DnDCaritureCreator/.vs/
+/DnDCaritureCreator/DnDCaritureCreator/bin/Debug/net8.0/DnDCaritureCreator.dll
+/DnDCaritureCreator/.vs/DnDCaritureCreator/v17/.suo
+/DnDCaritureCreator/.vs/DnDCaritureCreator/v17/DocumentLayout.json
+/DnDCaritureCreator/DnDCaritureCreator/bin/Debug/net8.0/DnDCaritureCreator.pdb
+/DnDCaritureCreator/DnDCaritureCreator/bin/Debug/net8.0/DnDCaritureCreator.exe
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/ref/DnDCaritureCreator.dll
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/refint/DnDCaritureCreator.dll
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/apphost.exe
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.AssemblyInfo.cs
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.AssemblyInfoInputs.cache
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.dll
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.pdb
+/DnDCaritureCreator/DnDCaritureCreator/obj/Debug/net8.0/DnDCaritureCreator.sourcelink.json
