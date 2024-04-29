@@ -117,7 +117,7 @@ namespace DnDCaritureCreator.services
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.Gray;
                 if (!pickStat)
-                    Console.WriteLine("Enter: select stat value  R: remove assigned stat  F: Finalise and confirm");
+                    Console.WriteLine($"Enter: select stat value  R: remove assigned stat { (usedStats.Contains(null) ? "": "F: Finalise and confirm")}");
                 else
                     Console.WriteLine("Enter: assign to stat C:Cancel");
 
@@ -153,8 +153,9 @@ namespace DnDCaritureCreator.services
                         pickStat = true;
                         
                     }
+                    
                     //prevent runing if not all stat assigned
-                    if (keyPress.Key == ConsoleKey.F)
+                    if ((keyPress.Key == ConsoleKey.F)&& !usedStats.Contains(null))
                     {
                         //display are you sure message
                         Console.Clear();

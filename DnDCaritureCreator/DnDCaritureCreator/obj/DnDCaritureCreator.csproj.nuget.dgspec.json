@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cs814\\Desktop\\programing\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj": {}
+    "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cs814\\Desktop\\programing\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj": {
+    "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cs814\\Desktop\\programing\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj",
+        "projectUniqueName": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj",
         "projectName": "DnDCaritureCreator",
-        "projectPath": "C:\\Users\\cs814\\Desktop\\programing\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj",
+        "projectPath": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator.csproj",
         "packagesPath": "C:\\Users\\cs814\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cs814\\Desktop\\programing\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\obj\\",
+        "outputPath": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,7 +27,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/mkuh/6f36c080-b8c4-427b-892a-6f2c8988c0c0/_packaging/MKUH-DevTeam-SharedResources/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -39,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

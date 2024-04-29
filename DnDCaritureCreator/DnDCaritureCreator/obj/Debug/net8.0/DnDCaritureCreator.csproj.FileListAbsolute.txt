@@ -13,3 +13,18 @@ C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCarit
 C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.pdb
 C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.genruntimeconfig.cache
 C:\Users\cs814\Desktop\programing\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\ref\DnDCaritureCreator.dll
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.exe
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.deps.json
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.runtimeconfig.json
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.dll
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\bin\Debug\net8.0\DnDCaritureCreator.pdb
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.GeneratedMSBuildEditorConfig.editorconfig
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.AssemblyInfoInputs.cache
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.AssemblyInfo.cs
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.csproj.CoreCompileInputs.cache
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.sourcelink.json
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.dll
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\refint\DnDCaritureCreator.dll
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.pdb
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\DnDCaritureCreator.genruntimeconfig.cache
+E:\programing\c# projects\DnDCaritureCreator\DnDCaritureCreator\DnDCaritureCreator\obj\Debug\net8.0\ref\DnDCaritureCreator.dll
