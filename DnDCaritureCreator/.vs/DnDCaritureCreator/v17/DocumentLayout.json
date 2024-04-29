@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|solutionrelative:dndcariturecreator\\services\\statgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|e:\\programing\\c# projects\\dndcariturecreator\\dndcariturecreator\\dndcariturecreator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|solutionrelative:dndcariturecreator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|e:\\programing\\c# projects\\dndcariturecreator\\dndcariturecreator\\dndcariturecreator\\models\\charactermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|solutionrelative:dndcariturecreator\\models\\charactermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|e:\\programing\\c# projects\\dndcariturecreator\\dndcariturecreator\\dndcariturecreator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94DA19A-5D5D-492B-BE56-65277AE76639}|DnDCaritureCreator\\DnDCaritureCreator.csproj|solutionrelative:dndcariturecreator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -74,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "characterModel.cs",
               "DocumentMoniker": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\models\\characterModel.cs",
               "RelativeDocumentMoniker": "DnDCaritureCreator\\models\\characterModel.cs",
@@ -82,7 +78,8 @@
               "RelativeToolTip": "DnDCaritureCreator\\models\\characterModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:58:47.791Z"
+              "WhenOpened": "2024-04-29T08:58:47.791Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,22 +89,23 @@
               "RelativeDocumentMoniker": "DnDCaritureCreator\\services\\StatGenerator.cs",
               "ToolTip": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\services\\StatGenerator.cs",
               "RelativeToolTip": "DnDCaritureCreator\\services\\StatGenerator.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAAAHcAAAB5AAAA",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAgwKYAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T08:58:47.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\Program.cs",
               "RelativeDocumentMoniker": "DnDCaritureCreator\\Program.cs",
               "ToolTip": "E:\\programing\\c# projects\\DnDCaritureCreator\\DnDCaritureCreator\\DnDCaritureCreator\\Program.cs",
               "RelativeToolTip": "DnDCaritureCreator\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:58:47.954Z"
+              "WhenOpened": "2024-04-29T08:58:47.954Z",
+              "EditorCaption": ""
             }
           ]
         },
