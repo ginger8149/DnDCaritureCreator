@@ -28,13 +28,10 @@ namespace DnDCaritureCreator.services
                 dice.Sort();
                 rolledStats.Add(dice[1] + dice[2] + dice[3]);
             }
-                
-
-
-
 
 
             List<string> statNames = new List<string>() { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" };
+            List<int> exsistingStats = new List<int>() { storedStats.strength, storedStats.dexterity, storedStats.constitution, storedStats.intelligence, storedStats.wisdom, storedStats.charisma };
 
             //UI managment flags
             List<int?> usedStats = new List<int?>() { null, null, null, null, null, null };
@@ -42,11 +39,9 @@ namespace DnDCaritureCreator.services
             int slectedStat = 6;// any number 6 or higher deactivates selection curser
             bool pickStat = false; //used for control not rendering
             bool removeStat = false;
-            
-
 
             //UI 
-            while( true)
+            while (true)
             {
 
                 // UI renderer
@@ -74,7 +69,7 @@ namespace DnDCaritureCreator.services
                         Console.ForegroundColor = ConsoleColor.Black;
                         Console.BackgroundColor = ConsoleColor.Green;
                     }
-                    
+
 
                     Console.Write(rolledStats[i]);
                     Console.ResetColor();
@@ -92,12 +87,12 @@ namespace DnDCaritureCreator.services
                     int statValue = 0;
 
                     //check if a stat has been assigned
-                    for(int j = 0; j < 6; j++)
+                    for (int j = 0; j < 6; j++)
                     {
-                        if(i == usedStats[j])
+                        if (i == usedStats[j])
                             statValue = rolledStats[j];
                     }
-                    
+
                     // colour managment
                     Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Gray;
@@ -110,23 +105,23 @@ namespace DnDCaritureCreator.services
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                     }
-                    Console.WriteLine(statNames[i] + ": " + statValue);
+                    Console.WriteLine(statNames[i] + ": " + statValue + $"{(exsistingStats[i] != 0 ? $" + {exsistingStats[i]}" : "")}");
                 }
 
                 Console.WriteLine();
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.Gray;
                 if (!pickStat)
-                    Console.WriteLine("Enter: select stat value  R: remove assigned stat  F: Finalise and confirm");
+                    Console.WriteLine($"Enter: select stat value  R: remove assigned stat {(usedStats.Contains(null) ? "" : "F: Finalise and confirm")}");
                 else
                     Console.WriteLine("Enter: assign to stat C:Cancel");
 
                 // ui controler
-                ConsoleKeyInfo keyPress =  Console.ReadKey();
+                ConsoleKeyInfo keyPress = Console.ReadKey();
 
                 if (!pickStat)
                 {
-                    if(keyPress.Key == ConsoleKey.LeftArrow)
+                    if (keyPress.Key == ConsoleKey.LeftArrow)
                     {
                         slectedRoll--;
                         if (slectedRoll < 0)
@@ -148,13 +143,14 @@ namespace DnDCaritureCreator.services
                     }
                     if (keyPress.Key == ConsoleKey.Enter)
                     {
-                        
+
                         slectedStat = 0;
                         pickStat = true;
-                        
+
                     }
+
                     //prevent runing if not all stat assigned
-                    if (keyPress.Key == ConsoleKey.F)
+                    if ((keyPress.Key == ConsoleKey.F) && !usedStats.Contains(null))
                     {
                         //display are you sure message
                         Console.Clear();
@@ -168,15 +164,15 @@ namespace DnDCaritureCreator.services
                                 if (i == usedStats[j])
                                     statValue = rolledStats[j];
                             }
-                            Console.WriteLine(statNames[i] + ": " + statValue);
+                            Console.WriteLine(statNames[i] + ": " + (statValue + exsistingStats[i]));
 
                         }
-                        
+
                         ConsoleKeyInfo key = Console.ReadKey();
                         if (key.Key == ConsoleKey.Y)
                         {
                             //save choices to cariture
-                            foreach(int stat in usedStats)
+                            foreach (int stat in usedStats)
                             {
                                 //"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"
                                 if (stat == 0)
@@ -193,12 +189,8 @@ namespace DnDCaritureCreator.services
                                     storedStats.charisma += stat;
                             }
                             break;
-
                         }
-
-
                     }
-
                 }
                 else if (removeStat)
                 {
@@ -222,9 +214,9 @@ namespace DnDCaritureCreator.services
                         removeStat = false;
 
                     }
-                    if (keyPress.Key == ConsoleKey.Enter) 
+                    if (keyPress.Key == ConsoleKey.Enter)
                     {
-                        for(int i = 0; i < 6; i++)
+                        for (int i = 0; i < 6; i++)
                         {
                             if (usedStats[i] == slectedStat)
                             {
@@ -272,7 +264,8 @@ namespace DnDCaritureCreator.services
                             }
                         }
 
-                        if (!statAssigned) { 
+                        if (!statAssigned)
+                        {
                             usedStats[slectedRoll] = slectedStat;
                             slectedRoll = 0;
                             slectedStat = 6;
@@ -283,17 +276,7 @@ namespace DnDCaritureCreator.services
                     }
                 }
 
-
             }
-
-
-
-
-
-
-
-
-
 
             return storedStats;
 
