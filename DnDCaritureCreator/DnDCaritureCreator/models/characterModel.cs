@@ -9,7 +9,6 @@ namespace DnDCaritureCreator.models
 {
     internal class characterModel
     {
-
         public CharacterStats Stats { get; set; }
     }
 

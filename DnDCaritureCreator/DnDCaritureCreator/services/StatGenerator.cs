@@ -282,6 +282,20 @@ namespace DnDCaritureCreator.services
 
         }
 
+        public CharacterStats PointBuy(CharacterStats storedStats)
+        {
+
+            while (true)
+            {
+
+            }
+
+
+
+
+            return storedStats;
+        }
+
 
     }
 }
