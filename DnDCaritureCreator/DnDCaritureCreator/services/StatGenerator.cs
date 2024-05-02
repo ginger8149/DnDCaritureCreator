@@ -285,14 +285,42 @@ namespace DnDCaritureCreator.services
         public CharacterStats PointBuy(CharacterStats storedStats)
         {
 
-            while (true)
-            {
 
+            List<string> statNames = new List<string>() { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" };
+            List<int> exsistingStats = new List<int>() { storedStats.strength, storedStats.dexterity, storedStats.constitution, storedStats.intelligence, storedStats.wisdom, storedStats.charisma };
+
+            List<int> stats = new List<int>() { 8, 8, 8, 8, 8, 8 };
+
+
+
+            // pre render un updated eliments and placeholder values
+            Console.Clear();
+            Console.WriteLine("POINT BUY EDITOR");
+
+            Console.Write("Points available:");
+            Console.CursorLeft = 20;
+            Console.Write("00/27");
+            Console.WriteLine();
+            Console.WriteLine();
+            
+            // pre render stat names and values
+            for (int i = 0; i < 6; i++)
+            {
+                Console.Write(statNames[i]);
+                Console.CursorLeft = 20;
+                Console.Write("<00>");
+                Console.WriteLine();
             }
 
+            Console.WriteLine();
+            // controls
+            Console.WriteLine("  ↑: Up  ↓: Down  \u2190: Decrease stat value  →: Increase stat value");
 
-
-
+            // UI loop
+            while (true)
+            {
+                Console.ReadKey();
+            }
             return storedStats;
         }
 

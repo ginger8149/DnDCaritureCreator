@@ -12,5 +12,5 @@ testStats.strength = 1;
 
 StatGenerator StatGenerator = new StatGenerator();
 
-testStats = StatGenerator.RolledStats(testStats);
+testStats = StatGenerator.PointBuy(testStats);
 
