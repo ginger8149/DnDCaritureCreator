@@ -285,15 +285,20 @@ namespace DnDCaritureCreator.services
         public CharacterStats PointBuy(CharacterStats storedStats)
         {
 
-
+            // storage variables
             List<string> statNames = new List<string>() { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" };
             List<int> exsistingStats = new List<int>() { storedStats.strength, storedStats.dexterity, storedStats.constitution, storedStats.intelligence, storedStats.wisdom, storedStats.charisma };
 
             List<int> stats = new List<int>() { 8, 8, 8, 8, 8, 8 };
 
+            //ui flags
+            int cursorPos = 0;
 
 
             // pre render un updated eliments and placeholder values
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.BackgroundColor = ConsoleColor.Black;
+
             Console.Clear();
             Console.WriteLine("POINT BUY EDITOR");
 
@@ -306,9 +311,19 @@ namespace DnDCaritureCreator.services
             // pre render stat names and values
             for (int i = 0; i < 6; i++)
             {
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.BackgroundColor = ConsoleColor.Black;
+
                 Console.Write(statNames[i]);
+
+                if (i == 0)
+                {
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                }
+                
                 Console.CursorLeft = 20;
-                Console.Write("<00>");
+                Console.Write($"<{stats[i]}>");
                 Console.WriteLine();
             }
 
@@ -316,10 +331,51 @@ namespace DnDCaritureCreator.services
             // controls
             Console.WriteLine("  ↑: Up  ↓: Down  \u2190: Decrease stat value  →: Increase stat value");
 
-            // UI loop
+            // UI control loop
             while (true)
             {
-                Console.ReadKey();
+                ConsoleKeyInfo key = Console.ReadKey();
+
+                if (key.Key == ConsoleKey.DownArrow) 
+                {
+                    // reset colours on current selection
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                    //update cursor pos
+                    cursorPos += 1;
+                    if(cursorPos > 5)
+                        cursorPos = 0;
+
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                }
+                else if (key.Key == ConsoleKey.UpArrow)
+                {
+                    // reset colours on current selection
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                    //update cursor pos
+                    cursorPos -= 1;
+                    if (cursorPos < 0)
+                        cursorPos = 5;
+
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                }
+
+                Console.SetCursorPosition(0, 20);
             }
             return storedStats;
         }
