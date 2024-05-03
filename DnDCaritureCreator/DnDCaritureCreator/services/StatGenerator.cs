@@ -290,9 +290,12 @@ namespace DnDCaritureCreator.services
             List<int> exsistingStats = new List<int>() { storedStats.strength, storedStats.dexterity, storedStats.constitution, storedStats.intelligence, storedStats.wisdom, storedStats.charisma };
 
             List<int> stats = new List<int>() { 8, 8, 8, 8, 8, 8 };
+            int pointsAvailable = 27;
+
 
             //ui flags
             int cursorPos = 0;
+
 
 
             // pre render un updated eliments and placeholder values
@@ -304,7 +307,7 @@ namespace DnDCaritureCreator.services
 
             Console.Write("Points available:");
             Console.CursorLeft = 20;
-            Console.Write("00/27");
+            Console.Write($"{pointsAvailable}/27");
             Console.WriteLine();
             Console.WriteLine();
             
@@ -374,7 +377,64 @@ namespace DnDCaritureCreator.services
                     Console.Write($"<{stats[cursorPos]}>");
 
                 }
+                else if (key.Key == ConsoleKey.LeftArrow)
+                {
+                    // reset colours on current selection
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.BackgroundColor = ConsoleColor.Black;
 
+                    Console.SetCursorPosition(20,1);
+                    Console.Write("  ");
+
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"       ");
+
+                    //update Stat Value
+                    if (stats[cursorPos] > 8)
+                    {
+                        stats[cursorPos]--;
+                        pointsAvailable++;
+
+                    }
+
+                    Console.SetCursorPosition(20, 1);
+                    Console.Write(pointsAvailable);
+
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                }
+                else if (key.Key == ConsoleKey.RightArrow)
+                {
+                    // reset colours on current selection
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.BackgroundColor = ConsoleColor.Black;
+
+                    Console.SetCursorPosition(20, 1);
+                    Console.Write("  ");
+
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"       ");
+
+                    //update Stat Value
+                    if ((stats[cursorPos] < 15)&&(pointsAvailable>0))// update max stat level
+                    {
+                        stats[cursorPos]++;
+                        pointsAvailable--;
+
+                    }
+
+                    Console.SetCursorPosition(20, 1);
+                    Console.Write(pointsAvailable);
+
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(20, cursorPos + 3);
+                    Console.Write($"<{stats[cursorPos]}>");
+
+                }
                 Console.SetCursorPosition(0, 20);
             }
             return storedStats;
